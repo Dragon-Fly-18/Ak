@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Jerseys Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Football Jerseys</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#" id="cart-link">Cart (0)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Our Jerseys</h2>
+            <div class="product" id="product1">
+                <img src="jersey1.jpg" alt="Jersey 1">
+                <h3>Football Jersey A</h3>
+                <p>$50</p>
+                <button class="add-to-cart" data-product="Football Jersey A" data-price="50">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="jersey2.jpg" alt="Jersey 2">
+                <h3>Football Jersey B</h3>
+                <p>$55</p>
+                <button class="add-to-cart" data-product="Football Jersey B" data-price="55">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+    </main>
+
+    <!-- Modal for Cart -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total-price">0</span></p>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Football Jerseys Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
